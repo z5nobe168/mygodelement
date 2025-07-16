@@ -2,9 +2,6 @@ workflows:
   unsigned-build:
     name: Build unsigned iOS app
     environment:
-      vars:
-        BUNDLE_ID: io.element.elementX
-      instance_type: mac_mini_m1
       xcode: "15.2"
     scripts:
       - name: Install CocoaPods

@@ -4,9 +4,8 @@ workflows:
     environment:
       xcode: "15.2"
     scripts:
-      - name: Install CocoaPods
+      - name: Install Pods (using system CocoaPods)
         script: |
-          gem install cocoapods
           pod install
       - name: Clean build
         script: |
